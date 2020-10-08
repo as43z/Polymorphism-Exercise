@@ -11,3 +11,4 @@ It implements the simple functionalities seen in class:
 Also I added some other features such as:
 
 - A rhombus (or diamond) figure.
+- User input.
