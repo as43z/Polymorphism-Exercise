@@ -21,10 +21,11 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Figura[] v = new Figura[3];
+        Figura[] v = new Figura[4];
         v[0] = new Rectangulo(5.0, 2.0);
         v[1] = new Circulo(2.0);
         v[2] = new Cuadrado(3.0);
+        v[3] = new Rombo(4.0, 6.0);
 
         printArray(v);
 
