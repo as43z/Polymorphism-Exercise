@@ -1,6 +1,7 @@
 package com.company;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main {
 
@@ -21,11 +22,27 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
         Figura[] v = new Figura[4];
-        v[0] = new Rectangulo(5.0, 2.0);
-        v[1] = new Circulo(2.0);
-        v[2] = new Cuadrado(3.0);
-        v[3] = new Rombo(4.0, 6.0);
+
+        System.out.print("Dame un radio: ");
+        double rad = scan.nextDouble();
+
+        System.out.print("Dame los lados de un rectangulo: ");
+        double l1 = scan.nextDouble();
+        double l2 = scan.nextDouble();
+
+        System.out.print("Dame el lado de un cuadrado: ");
+        double l = scan.nextDouble();
+
+        System.out.print("Dame la diagonal mayor y la diagonal menor de un rombo: ");
+        double dMayor = scan.nextDouble();
+        double dMenor = scan.nextDouble();
+
+        v[0] = new Rectangulo(l1, l2);
+        v[1] = new Circulo(rad);
+        v[2] = new Cuadrado(l);
+        v[3] = new Rombo(dMayor, dMenor);
 
         printArray(v);
 
